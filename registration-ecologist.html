@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="ru">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Регистрация для эколога | Экодиктант </title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ 
+  <!-- <link rel="stylesheet" href="bootstrap/bootstrap.min.css"> -->
+
+  <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/main.css">
+  
+</head>
+<body id="registration-ecologist-page">
+<header class="header" id="header">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-1 col-2">
+        <a href="#" class="header__logo-desktop"><img src="img/logo-h.svg" alt="logo"></a>
+        <a href="#" class="header__logo-mobile"><img src="img/logo-mobile.svg" alt="logo"></a>
+      </div>
+      <div class="offset-lg-1 col-xl-9 col-10 d-flex align-items-center">
+        <ul class="header__main-menu d-flex">
+          <li><a href="#">О проекте</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Мероприятия</a></li>
+          <li><a href="#">ЭкоЗнания</a></li>
+          <li><a href="#">Офлайн площадки</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <button class="header__btn" id="search-btn"><img src="img/search.svg" alt="search"></button>
+        <button class="header__btn login"><img src="img/user.svg" alt="user"></button>
+        <select class="header__language">
+          <option selected>RU</option>
+          <option>EN</option>
+        </select>
+        <button class="main-btn">РЕГИСТРАЦИЯ</button>
+        <img src="img/burger.svg" alt="burger" id="burger" class="header__burger">
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="registration">
+  <div class="container">
+    <form class="row">
+      <div class="offset-xl-3 col-xl-3 offset-lg-2 col-lg-4 col-md-6">
+        <div class="registration__input">
+          <p class="mb-1 ml-1">Страна</p>
+          <select onchange="this.setAttribute('data-selected', true)">
+            <option selected disabled hidden>Выбрать</option>
+            <option>Российская Федерация</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="registration__input">
+          <p class="mb-1 ml-1">Регион РФ</p>
+          <select onchange="this.setAttribute('data-selected', true)">
+            <option selected disabled hidden>Выбрать</option>
+            <option>Москва</option>
+          </select>
+        </div>
+      </div>
+      <div class="offset-xl-3 col-xl-3 offset-lg-2 col-lg-4 col-md-6">
+        <div class="registration__input">
+          <p class="mb-1 ml-1">Фамилия</p>
+          <input type="text" placeholder="Ваша фамилия">
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="registration__input">
+          <p class="mb-1 ml-1">Имя</p>
+          <input type="text" placeholder="Ваше имя">
+        </div>
+      </div>
+      <div class="offset-xl-3 col-xl-3 offset-lg-2 col-lg-4 col-md-6">
+        <div class="registration__input">
+          <p class="mb-1 ml-1">Отчество (при наличии)</p>
+          <input type="text" placeholder="Ваше отчество">
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="registration__input">
+          <p class="mb-1 ml-1">Пол</p>
+          <select onchange="this.setAttribute('data-selected', true)">
+            <option selected disabled hidden>Выбрать</option>
+            <option>Женский</option>
+            <option>Мужской</option>
+          </select>
+        </div>
+      </div>
+      <div class="offset-xl-3 col-xl-3 offset-lg-2 col-lg-4 col-md-6">
+        <div class="registration__input">
+          <div class="d-flex align-items-center ml-1">
+            <p>Организация/учреждение</p>
+            <img src="img/prompt.svg" alt="prompt" class="ml-2" title="Подсказка">
+          </div>
+          <input type="text" placeholder="Ваш email">
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="registration__input">
+          <p class="mb-1 ml-1">Возраст</p>
+          <input type="text" placeholder="00">
+        </div>
+      </div>
+      <div class="offset-xl-3 col-xl-3 offset-lg-2 col-lg-4 col-md-6">
+        <div class="registration__input">
+          <p class="mb-1 ml-1">Телефон</p>
+          <div class="registration__input_telephone p-0 d-flex">
+            <select onchange="this.setAttribute('data-selected', true)">
+              <option selected disabled hidden>+7</option>
+              <option>+7</option>
+              <option>+375</option>
+            </select>
+            <input type="text" placeholder="000 000 00 00">
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="registration__input">
+          <p class="mb-1 ml-1">Электронная почта</p>
+          <input type="text" placeholder="Ваш email">
+        </div>
+      </div>
+      <div class="offset-xl-3 col-xl-3 offset-lg-2 col-lg-4 col-md-6">
+        <div class="registration__input">
+          <p class="mb-1 ml-1">Придумайте пароль</p>
+          <input type="password" placeholder="0000000000">
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6">
+        <div class="registration__input">
+          <p class="mb-1 ml-1">Повторите пароль</p>
+          <input type="password" placeholder="000000000">
+        </div>
+      </div>
+      <div class="offset-xl-3 offset-lg-2 col-xl-6 col-lg-8">
+        <div class="registration__checkbox d-flex align-items-center m-auto" style="width: 290px">
+          <input type="checkbox" id="personal-data" name="personal-data"
+            required>
+          <label for="personal-data" class="check"></label>
+          <label for="personal-data" class="desc">Согласие на обработку персональных данных</label>
+        </div>
+      </div>
+      <div class="col-lg-6 m-auto">
+        <p class="text-center mt-5" style="color: #0079C2">Выберите способ подтверждения данных</p>
+        <div class="registration__confirm_data d-flex justify-content-center mt-2">
+          <div class="registration__radio d-flex align-items-center">
+            <input type="radio" id="confirm-data-3" name="confirm-data"
+              required checked>
+            <label for="confirm-data-3" class="check"></label>
+            <label for="confirm-data-3" class="desc">Через SMS</label>
+          </div>
+          <div class="registration__radio d-flex align-items-center">
+            <input type="radio" id="confirm-data-1" name="confirm-data"
+              required>
+            <label for="confirm-data-1" class="check"></label>
+            <label for="confirm-data-1" class="desc">Через e-mail</label>
+          </div>
+        </div>
+        <div class="registration__captcha text-center">
+          <img src="img/captcha.png" alt="captcha">
+        </div>
+        <button type="submit" class="main-btn">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 m-auto">
+        <h1 style="font-weight: 400;">&nbsp;</h1>
+      </div>
+      <div class="offset-lg-1 col-lg-3 col-md-4 col-7">
+        <h4 class="mb-1">Федеральный оргкомитет:</h4>
+        <a href="mailto:ecodiktant@ravnopravie.online" style="color: #02517A;" class="d-block">ecodiktant@ravnopravie.online</a>
+        <a href="#" class="blue-btn">Техподдержка</a>
+        <div class="footer__social d-flex justify-content-between">
+          <a href="#"><img src="img/insta.svg" alt="insta"></a>
+          <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+          <a href="#"><img src="img/vk.svg" alt="vk"></a>
+          <a href="#"><img src="img/youtube.svg" alt="youtube"></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 dn">
+        <ul class="footer__menu">
+          <li><a href="#">О проекте</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Мероприятия</a></li>
+          <li><a href="#">ЭкоЗнания</a></li>
+          <li><a href="#">Офлайн площадки</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-4 col-5">
+        <img src="img/logo-f.svg" alt="logo" class="footer__logo">
+      </div>
+    </div>
+  </div>
+  <div class="credits">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 col-lg-10 m-auto d-flex justify-content-between">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Политика обработки персональных данных</a>
+          <a href="#">Регистрация офлайн площадки</a>
+        </div>
+        <div class="col-12 text-center mt-2">
+          <p>© АНО «Равноправие» | 2019 - 2021</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<nav class="mobile-menu">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-right">
+        <img src="img/close.svg" alt="close" class="mobile-menu__close" id="close">
+        <ul>
+          <li><a href="#">О проекте</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Мероприятия</a></li>
+          <li><a href="#">ЭкоЗнания</a></li>
+          <li><a href="#">Офлайн площадки</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="mt-5">
+          <li><a href="#" style="margin-bottom: 7px;">Войти</a></li>
+          <li><a href="#" style="font-weight: 300;">Зарегистрироваться</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="search d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 m-auto">
+        <form class="d-flex align-items-center">
+          <input type="text">
+          <button type="submit" class="search-btn"><img src="img/search-btn.svg" alt="search"></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<script src="bootstrap/jquery-3.5.1.slim.min.js"></script>
+<script src="bootstrap/popper.min.js"></script>
+<script src="bootstrap/bootstrap.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
+  
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
+
+
+

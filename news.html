@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="ru">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Новости | Экодиктант </title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ 
+  <!-- <link rel="stylesheet" href="bootstrap/bootstrap.min.css"> -->
+
+  <link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/main.css">
+  
+</head>
+<body id="news-page">
+<header class="header" id="header">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-1 col-2">
+        <a href="#" class="header__logo-desktop"><img src="img/logo-h.svg" alt="logo"></a>
+        <a href="#" class="header__logo-mobile"><img src="img/logo-mobile.svg" alt="logo"></a>
+      </div>
+      <div class="offset-lg-1 col-xl-9 col-10 d-flex align-items-center">
+        <ul class="header__main-menu d-flex">
+          <li><a href="#">О проекте</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Мероприятия</a></li>
+          <li><a href="#">ЭкоЗнания</a></li>
+          <li><a href="#">Офлайн площадки</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <button class="header__btn" id="search-btn"><img src="img/search.svg" alt="search"></button>
+        <button class="header__btn login"><img src="img/user.svg" alt="user"></button>
+        <select class="header__language">
+          <option selected>RU</option>
+          <option>EN</option>
+        </select>
+        <button class="main-btn">РЕГИСТРАЦИЯ</button>
+        <img src="img/burger.svg" alt="burger" id="burger" class="header__burger">
+      </div>
+    </div>
+  </div>
+</header>
+<section class="title-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 m-auto">
+        <p>Новости</p>
+        <a href="#">Главная</a><span> / Новости</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="news">
+  <div class="container">
+    <div class="row">
+      <div class="offset-lg-5 col-lg-6">
+        <div class="filter d-flex">
+          <div class="checkselect">
+            <fieldset>
+             <p>Все</p>
+              <div class="registration__checkbox d-flex align-items-center m-auto">
+                <input type="checkbox" id="world-news">
+                <label for="world-news" class="check"></label>
+                <label for="world-news" class="desc">Международные новости</label>
+              </div>
+              <div class="registration__checkbox d-flex align-items-center m-auto">
+                <input type="checkbox" id="federal-news">
+                <label for="federal-news" class="check"></label>
+                <label for="federal-news" class="desc">Федеральные новости</label>
+              </div>
+              <div class="registration__checkbox d-flex align-items-center m-auto">
+                <input type="checkbox" id="region-news">
+                <label for="region-news" class="check"></label>
+                <label for="region-news" class="desc">Региональные новости</label>
+              </div>
+              <!-- <label><input type="checkbox">Международные новости</label>
+              <label><input type="checkbox">Федеральные новости</label>
+              <label><input type="checkbox">Региональные новости</label> -->
+            </fieldset>		
+          </div>
+          <select onchange="this.setAttribute('data-selected', true)" style="margin-left:12px;">
+            <option selected disabled hidden>Регион</option>
+            <option>Регион 1</option>
+            <option>Регион 2</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="news">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 m-auto">
+        <h2 class="border-bottom pb-1">Международные</h2>
+        <div class="owl-carousel owl-theme news-world__owl">
+          <div class="item news__item">
+            <div class="news__item_img" style="background: #C4C4C4 url(img/single-1.png) no-repeat center center / cover;"></div>
+            <h4>ОТКАЗ ОТ РАСПЕЧАТОК</h4>
+            <p>Российский день без бумаги: отказался от распечаток – проходи Экодиктант онлайн!</p>
+            <span class="news__item_date">00.00.0000</span>
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="item news__item">
+            <div class="news__item_img" style="background: #C4C4C4 url(img/single-2.png) no-repeat center center / cover;"></div>
+            <h4>Зеленые мотивы</h4>
+            <p>Зеленые мотивы Никаса Сафронова: почему художник решил поддержать Всероссийский Экодиктант </p>
+            <span class="news__item_date">00.00.0000</span>
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="item news__item">
+            <div class="news__item_img" style="background: #C4C4C4 url(img/single-3.png) no-repeat center center / cover;"></div>
+            <h4>Сохранение природы</h4>
+            <p>Сохранение природы – дело их жизни: Федеральный оргкомитет Экодиктанта поздравляет работников заповедного...</p>
+            <span class="news__item_date">00.00.0000</span>
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="item news__item">
+            <div class="news__item_img" style="background: #C4C4C4 url(img/single-2.png) no-repeat center center / cover;"></div>
+            <h4>ОТКАЗ ОТ РАСПЕЧАТОК</h4>
+            <p>Российский день без бумаги: отказался от распечаток – проходи Экодиктант онлайн!</p>
+            <span class="news__item_date">00.00.0000</span>
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="news">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 m-auto">
+        <h2 class="border-bottom pb-1">Федеральные</h2>
+        <div class="owl-carousel owl-theme news-federal__owl">
+          <div class="item news__item">
+            <div class="news__item_img" style="background: #C4C4C4 url(img/single-4.png) no-repeat center center / cover;"></div>
+            <h4>ПОРУЧИЛА МИНИСТРАМ</h4>
+            <p>Вице-премьер Виктория Абрамченко поручила федеральным министрам поддержать Экодиктант</p>
+            <span class="news__item_date">00.00.0000</span>
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="item news__item">
+            <div class="news__item_img" style="background: #C4C4C4 url(img/single-5.png) no-repeat center center / cover;"></div>
+            <h4>ЭКОЛОГИЧЕСКОЕ МЫШЛЕНИЕ</h4>
+            <p>Лео Бокерия: для здорового образа жизни людям нужно новое экологическое мышление</p>
+            <span class="news__item_date">00.00.0000</span>
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="item news__item">
+            <div class="news__item_img" style="background: #C4C4C4 url(img/single-6.png) no-repeat center center / cover;"></div>
+            <h4>МОСКОВСКИЙ МАРАФОН</h4>
+            <p>Всероссийский Экодиктант пробежал Московский марафон</p>
+            <span class="news__item_date">00.00.0000</span>
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="item news__item">
+            <div class="news__item_img" style="background: #C4C4C4 url(img/single-2.png) no-repeat center center / cover;"></div>
+            <h4>ОТКАЗ ОТ РАСПЕЧАТОК</h4>
+            <p>Российский день без бумаги: отказался от распечаток – проходи Экодиктант онлайн!</p>
+            <span class="news__item_date">00.00.0000</span>
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="news">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 m-auto">
+        <h2 class="border-bottom pb-1">Региональные</h2>
+        <div class="owl-carousel owl-theme news-federal__owl">
+          <div class="item news__item">
+            <div class="news__item_img" style="background: #C4C4C4 url(img/single-.png) no-repeat center center / cover;"></div>
+            <h4>ЗАГОЛОВОК НОВОСТИ</h4>
+            <p>Вице-премьер Виктория Абрамченко поручила федеральным министрам поддержать Экодиктант</p>
+            <span class="news__item_date">00.00.0000</span>
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="item news__item">
+            <div class="news__item_img" style="background: #C4C4C4 url(img/single-.png) no-repeat center center / cover;"></div>
+            <h4>ЗАГОЛОВОК НОВОСТИ</h4>
+            <p>Лео Бокерия: для здорового образа жизни людям нужно новое экологическое мышление</p>
+            <span class="news__item_date">00.00.0000</span>
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="item news__item">
+            <div class="news__item_img" style="background: #C4C4C4 url(img/single-.png) no-repeat center center / cover;"></div>
+            <h4>ЗАГОЛОВОК НОВОСТИ</h4>
+            <p>Всероссийский Экодиктант пробежал Московский марафон</p>
+            <span class="news__item_date">00.00.0000</span>
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="item news__item">
+            <div class="news__item_img" style="background: #C4C4C4 url(img/single-.png) no-repeat center center / cover;"></div>
+            <h4>ЗАГОЛОВОК НОВОСТИ</h4>
+            <p>Российский день без бумаги: отказался от распечаток – проходи Экодиктант онлайн!</p>
+            <span class="news__item_date">00.00.0000</span>
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-10 m-auto">
+        <button class="blue-btn" style="width: 180px; margin: 45px auto 0 auto;">ВСЕ НОВОСТИ</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="news ">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 m-auto">
+        <h2 class="border-bottom">События</h2>
+      </div>
+      <div class="col-lg-10 m-auto">
+        <div class="news-events d-flex flex-row flex-wrap justify-content-between">
+          <div class="news__item news-events__item">
+            <div class="news__item_img" style="background: #C4C4C4 url(img/single-.png) no-repeat center center / cover;"></div>
+            <h4>ЗАГОЛОВОК</h4>
+            <p>Повседневная практика показывает, что сложившаяся структура организации играет важную роль в формировании...</p>
+            <span class="news__item_date">00.00.0000</span>
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="news__item news-events__item">
+            <div class="news__item_img" style="background: #C4C4C4 url(img/single-.png) no-repeat center center / cover;"></div>
+            <h4>ЗАГОЛОВОК</h4>
+            <p>Повседневная практика показывает, что сложившаяся структура организации играет важную роль в формировании...</p>
+            <span class="news__item_date">00.00.0000</span>
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="news__item news-events__item">
+            <div class="news__item_img" style="background: #C4C4C4 url(img/single-.png) no-repeat center center / cover;"></div>
+            <h4>ЗАГОЛОВОК</h4>
+            <p>Повседневная практика показывает, что сложившаяся структура организации играет важную роль в формировании...</p>
+            <span class="news__item_date">00.00.0000</span>
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="news__item news-events__item">
+            <div class="news__item_img" style="background: #C4C4C4 url(img/single-.png) no-repeat center center / cover;"></div>
+            <h4>ЗАГОЛОВОК</h4>
+            <p>Повседневная практика показывает, что сложившаяся структура организации играет важную роль в формировании...</p>
+            <span class="news__item_date">00.00.0000</span>
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="news__item news-events__item">
+            <div class="news__item_img" style="background: #C4C4C4 url(img/single-.png) no-repeat center center / cover;"></div>
+            <h4>ЗАГОЛОВОК</h4>
+            <p>Повседневная практика показывает, что сложившаяся структура организации играет важную роль в формировании...</p>
+            <span class="news__item_date">00.00.0000</span>
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="news__item news-events__item">
+            <div class="news__item_img" style="background: #C4C4C4 url(img/single-.png) no-repeat center center / cover;"></div>
+            <h4>ЗАГОЛОВОК</h4>
+            <p>Повседневная практика показывает, что сложившаяся структура организации играет важную роль в формировании...</p>
+            <span class="news__item_date">00.00.0000</span>
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-10 m-auto">
+        <button class="blue-btn" style="width: 180px; margin: 0 auto 50px auto;">ВСЕ СОБЫТИЯ</button>
+      </div>
+      <div class="col-lg-10 m-auto pb-5">
+        <div class="pagination d-flex justify-content-center">
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <div style="border: none; font-size: 24px;
+          font-weight: 700;">...</div>
+          <a href="#">100</a>
+          <a href="#">101</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 m-auto">
+        <h1 style="font-weight: 400;">&nbsp;</h1>
+      </div>
+      <div class="offset-lg-1 col-lg-3 col-md-4 col-7">
+        <h4 class="mb-1">Федеральный оргкомитет:</h4>
+        <a href="mailto:ecodiktant@ravnopravie.online" style="color: #02517A;" class="d-block">ecodiktant@ravnopravie.online</a>
+        <a href="#" class="blue-btn">Техподдержка</a>
+        <div class="footer__social d-flex justify-content-between">
+          <a href="#"><img src="img/insta.svg" alt="insta"></a>
+          <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
+          <a href="#"><img src="img/vk.svg" alt="vk"></a>
+          <a href="#"><img src="img/youtube.svg" alt="youtube"></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 dn">
+        <ul class="footer__menu">
+          <li><a href="#">О проекте</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Мероприятия</a></li>
+          <li><a href="#">ЭкоЗнания</a></li>
+          <li><a href="#">Офлайн площадки</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-4 col-5">
+        <img src="img/logo-f.svg" alt="logo" class="footer__logo">
+      </div>
+    </div>
+  </div>
+  <div class="credits">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 col-lg-10 m-auto d-flex justify-content-between">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Политика обработки персональных данных</a>
+          <a href="#">Регистрация офлайн площадки</a>
+        </div>
+        <div class="col-12 text-center mt-2">
+          <p>© АНО «Равноправие» | 2019 - 2021</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<nav class="mobile-menu">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-right">
+        <img src="img/close.svg" alt="close" class="mobile-menu__close" id="close">
+        <ul>
+          <li><a href="#">О проекте</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Мероприятия</a></li>
+          <li><a href="#">ЭкоЗнания</a></li>
+          <li><a href="#">Офлайн площадки</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="mt-5">
+          <li><a href="#" style="margin-bottom: 7px;">Войти</a></li>
+          <li><a href="#" style="font-weight: 300;">Зарегистрироваться</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="search d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 m-auto">
+        <form class="d-flex align-items-center">
+          <input type="text">
+          <button type="submit" class="search-btn"><img src="img/search-btn.svg" alt="search"></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<script src="bootstrap/jquery-3.5.1.slim.min.js"></script>
+<script src="bootstrap/popper.min.js"></script>
+<script src="bootstrap/bootstrap.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
+  
+<script src="owlcarousel/owl.carousel.min.js"></script>
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
+
+
+
+
